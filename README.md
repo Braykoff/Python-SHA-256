@@ -2,10 +2,6 @@
 An implementation of the SHA-256 hashing function written in Python to understand the basic principles and function of it.
 The `hash.py` file contains the actual code, `example.py` is just example usage. Run `hash.textToSha256(message)` to use.
 
---
-
-Python Sha-256 Converter
---
 **What is Sha-256?**
 Sha-256 is a cryptographic hash function. It was created in 2001 by the US National Security Agency, also known as the NSA. This hashing function is one-way, meaning that once you create a hash from a string, you can't create the string from the hash. Each hash is 64 characters long, and includes numbers and letters. 'sha' stands for 'Secure Hash Algorithm'. 
 
