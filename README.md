@@ -16,7 +16,7 @@ print(hashlib.sha256("Message here".encode('ASCII')).hexdigest())
 ```
 This is very easy and fast, which made me wonder... what if I made my own sha256 program in Python _without_ using libraries like hashlib?
 
-So I created this repl. In total, it uses two external libraries, but only for printing to the console. The libraries it uses are:
+So I created this project. In total, it uses two external libraries, but only for printing to the console. The libraries it uses are:
  - `os`: for clearing the console between inputs
  - `time`: for logging the amount of time each operation took
 
