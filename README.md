@@ -16,6 +16,7 @@ print(hashlib.sha256("Message here".encode('ASCII')).hexdigest())
 ```
 
 **Custom Implementation**
+
 The helper functions used are explained below:
 - `lowestMultiple(multiple, greaterThan)` (line 1): Returns the lowest number that is a multiple of `multiple` but greater than `greater than`
 - `splitIntoList(original, stringSize)` (line 7): Returns the string `original` split into an array of strings, each the length of `stringSize` (length of `original` must be divisible by `stringSize`)
