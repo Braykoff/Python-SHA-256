@@ -3,7 +3,7 @@ An implementation of the SHA-256 hashing function written in Python to understan
 The `hash.py` file contains the actual code, `example.py` is just example usage. Run `hash.textToSha256(message)` to use.
 
 **What is Sha-256?**
-Sha-256 is a cryptographic hash function. It was created in 2001 by the US National Security Agency, also known as the NSA. This hashing function is one-way, meaning that once you create a hash from a string, you can't create the string from the hash. Each hash is 64 characters long, and includes numbers and letters. 'sha' stands for 'Secure Hash Algorithm'. 
+Sha-256 is a cryptographic hash function. It was created in 2001 by the US National Security Agency. This hashing function is one-way, meaning that once you create a hash from a string, you can't create the string from the hash. Each hash is 64 characters long, and includes numbers and letters. 'sha' stands for 'Secure Hash Algorithm'. 
 
 More information can be found on [Wikipedia](https://wikipedia.org/wiki/SHA-2).
 
@@ -14,10 +14,9 @@ import hashlib
 
 print(hashlib.sha256("Message here".encode('ASCII')).hexdigest())
 ```
-This is very easy and fast, which made me wonder... what if I made my own sha256 program in Python _without_ using libraries like hashlib?
 
 **Explanation**
-The repl has 12 functions, which are explained below.
+This uses 12 functions, which are explained below:
 - `lowestMultiple(multiple, greaterThan)` (line 1): Returns the lowest number that is a multiple of `multiple` but greater than `greater than`
 - `splitIntoList(original, stringSize)` (line 7): Returns the string `original` split into an array of strings, each the length of `stringSize` (length of `original` must be divisible by `stringSize`)
 - `xorAddBinary(binary)` (line 17): Takes a list of binary strings, `binary`, and adds them together with an 'exclusive or'. Each bit is only true if the value of each corresponding bit differs, so if one is `true` and the other is `false`
